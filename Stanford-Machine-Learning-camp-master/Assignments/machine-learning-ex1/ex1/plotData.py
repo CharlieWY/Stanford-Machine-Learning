@@ -13,5 +13,7 @@ def plot_data(x, y):
 
 
     # ===========================================================
-
+    plt.scatter(x, y, color='r', marker='x')
+    plt.xlabel('X')
+    plt.ylabel('y')
     plt.show()

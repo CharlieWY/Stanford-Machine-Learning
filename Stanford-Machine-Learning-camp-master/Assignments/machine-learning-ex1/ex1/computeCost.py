@@ -9,8 +9,8 @@ def compute_cost(X, y, theta):
     # ===================== Your Code Here =====================
     # Instructions : Compute the cost of a particular choice of theta.
     #                You should set the variable "cost" to the correct value.
-    
-    cost = np.sum(y.transpose() - theta * X.transpose())
+    num = X.shape[0]
+    cost = 0.5 * np.sum(np.square(X * theta) - y) / num
     # ==========================================================
 
     return cost
