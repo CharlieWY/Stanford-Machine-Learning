@@ -11,9 +11,7 @@ def plot_data(x, y):
     # Hint : You can use the 'marker' parameter in the "plt.scatter" function to change the marker type (e.g. "x", "o").
     #        Furthermore, you can change the color of markers with 'c' parameter.
 
-
-    # ===========================================================
-    plt.scatter(x, y, color='r', marker='x')
-    plt.xlabel('X')
-    plt.ylabel('y')
+    plt.scatter(x, y, c='r', marker="x")
+    plt.xlabel('Population')
+    plt.ylabel('Profit')
     plt.show()
